@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio Lucien TITO</title>
+    </head>
+    <style>
+        .skills__container {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .skills__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    
+        .skills__data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .skills__names {
+            display: flex;
+            align-items: center;
+        }
+    
+        .skills__icon {
+            margin-right: 10px;
+        }
+    
+        .skills__bar {
+            width: 70%;
+            height: 8px;
+            background-color: #ddd;
+            margin-right: 10px;
+        }
+    </style>
+    
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">TITO</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">TITO<br>Lucien <span class="home__title-color">Dev AI</span><br>Full-Stack Dev</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/lucientito" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.github.com/mrcryptsie" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/moi.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About me!</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/moi.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Lucien TITO</h2>
+                        <p class="about__text">Passionate about artificial intelligence and full-stack development, 
+                                               I specialize in creating innovative solutions in Python and AI. With 
+                                               solid expertise in web application development, I deliver efficient and
+                                                scalable solutions to meet business needs. My background combines technical
+                                                 mastery and creativity, ensuring seamless integration of AI into various projects. 
+                                               Always striving for improvement, I constantly explore new technologies and optimize system performance.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+           <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">As a passionate developer, I specialize in both backend and frontend technologies, while integrating innovative AI solutions into various projects.</p>
+                        
+                        <!-- Skills Grid -->
+                        <div class="skills__grid">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-python skills__icon'></i>
+                                    <span class="skills__name">Python</span>
+                                </div>
+                                <div class="skills__bar skills__python"></div>
+                                <div><span class="skills__percentage">95%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-brain skills__icon'></i>
+                                    <span class="skills__name">Artificial Intelligence</span>
+                                </div>
+                                <div class="skills__bar skills__ai"></div>
+                                <div><span class="skills__percentage">90%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                                <div class="skills__bar skills__html"></div>
+                                <div><span class="skills__percentage">95%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <div class="skills__bar skills__css"></div>
+                                <div><span class="skills__percentage">85%</span></div>
+                            </div>
+
+                            <!-- Backend Skills -->
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-cog skills__icon'></i>
+                                    <span class="skills__name">Backend Development</span>
+                                </div>
+                                <div class="skills__bar skills__backend"></div>
+                                <div><span class="skills__percentage">90%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-django skills__icon'></i>
+                                    <span class="skills__name">Django</span>
+                                </div>
+                                <div class="skills__bar skills__django"></div>
+                                <div><span class="skills__percentage">90%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-php skills__icon'></i>
+                                    <span class="skills__name">PHP (Laravel, Symfony)</span>
+                                </div>
+                                <div class="skills__bar skills__php"></div>
+                                <div><span class="skills__percentage">85%</span></div>
+                            </div>
+
+                            <!-- Frontend Skills -->
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-react skills__icon'></i>
+                                    <span class="skills__name">React JS</span>
+                                </div>
+                                <div class="skills__bar skills__react"></div>
+                                <div><span class="skills__percentage">85%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon'></i>
+                                    <span class="skills__name">JavaScript</span>
+                                </div>
+                                <div class="skills__bar skills__js"></div>
+                                <div><span class="skills__percentage">80%</span></div>
+                            </div>
+
+                            <!-- AI Tools -->
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-chip skills__icon'></i>
+                                    <span class="skills__name">LangChain</span>
+                                </div>
+                                <div class="skills__bar skills__langchain"></div>
+                                <div><span class="skills__percentage">85%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-network-chart skills__icon'></i>
+                                    <span class="skills__name">Hugging Face</span>
+                                </div>
+                                <div class="skills__bar skills__huggingface"></div>
+                                <div><span class="skills__percentage">90%</span></div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-analyse skills__icon'></i>
+                                    <span class="skills__name">TensorFlow</span>
+                                </div>
+                                <div class="skills__bar skills__tensorflow"></div>
+                                <div><span class="skills__percentage">85%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://fenafeedb.org/fiche" class="work__img">
+                        <img src="assets/img/1.jpg" alt="">
+                    </a>
+                    <a href="https://beninhouse.com/" class="work__img">
+                        <img src="assets/img/2.jpg" alt="">
+                    </a>
+                    <a href="https://uatm-gasa.com/" class="work__img">
+                        <img src="assets/img/3.jpg" alt="">
+                    </a>
+                    <a href="https://www.wassanu.com/" class="work__img">
+                        <img src="assets/img/4.jpg" alt="">
+                    </a>
+                    <a href="https://www.orienty.bj/" class="work__img">
+                        <img src="assets/img/5.jpg" alt="">
+                    </a>
+                    <a href="https://fenafeedb.org/fiche" class="work__img">
+                        <img src="assets/img/1.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+            
+                <div class="contact__container bd-grid">
+                    <form id="contactForm" class="contact__form">
+                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" id="email" placeholder="Email" class="contact__input" required>
+                        <textarea id="message" cols="0" rows="10" class="contact__input" placeholder="Your message..." required></textarea>
+                        <input type="button" value="Envoyer" class="contact__button button" onclick="sendMail()">
+                    </form>
+                </div>
+            </section>
+            
+            <!-- Include the EmailJS SDK -->
+            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+                // Initialize EmailJS
+                (function() {
+                    emailjs.init("Y6XDFNUTyCy398XgQ");  // Remplace TON_USER_ID par ton User ID EmailJS
+                })();
+            
+                function sendMail() {
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var message = document.getElementById("message").value;
+            
+                    // Paramètres à envoyer à EmailJS
+                    var params = {
+                        from_name: name,
+                        from_email: email,
+                        message: message
+                    };
+            
+                    emailjs.send("service_94srurc", "template_0fopshp", params)
+                    .then(function(response) {
+                        alert("Message envoyé avec succès !");
+                    }, function(error) {
+                        alert("Une erreur s'est produite, veuillez réessayer.");
+                    });
+                }
+            </script>
+            
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">By Lucien TITO</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/in/mrcryptsie" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.linkedin.com/in/lucientito" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.github.com/mrcryptsie" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
